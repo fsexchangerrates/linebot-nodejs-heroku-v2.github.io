@@ -1,7 +1,6 @@
-const { Line } = require('messaging-api-line');
-
 module.exports = {
-    greeting = Line.createFlex('altText', [{
+    "type": "carousel",
+    "contents": [{
             "type": "bubble",
             "size": "mega",
             "body": {
@@ -177,9 +176,9 @@ module.exports = {
                                             "action": {
                                                 "type": "uri",
                                                 "label": "guide",
-                                                "uri": "line://app/1654168555-z90KwaXX",
+                                                "uri": "line://app/1654395306-RlYl9el5",
                                                 "altUri": {
-                                                    "desktop": "https://liff.line.me/1654168555-z90KwaXX"
+                                                    "desktop": "https://liff.line.me/1654395306-RlYl9el5"
                                                 }
                                             }
                                         }],
@@ -294,8 +293,11 @@ module.exports = {
                 "paddingAll": "0px",
                 "action": {
                     "type": "uri",
-                    "label": "buy or sell",
-                    "uri": "line://app/1654168555-vKg3wqZZ"
+                    "label": "order",
+                    "uri": "line://app/1654395306-AD0boRbW",
+                    "altUri": {
+                        "desktop": "https://liff.line.me/1654395306-AD0boRbW"
+                    }
                 }
             }
         },
@@ -392,10 +394,10 @@ module.exports = {
                 "paddingAll": "0px",
                 "action": {
                     "type": "uri",
-                    "label": "member",
-                    "uri": "line://app/1654168555-w3326mkk",
+                    "label": "memberArea",
+                    "uri": "line://app/1654395306-RZG14d1Y",
                     "altUri": {
-                        "desktop": "https://liff.line.me/1654168555-w3326mkk"
+                        "desktop": "https://liff.line.me/1654395306-RZG14d1Y"
                     }
                 }
             }
@@ -494,7 +496,10 @@ module.exports = {
                 "action": {
                     "type": "uri",
                     "label": "register or verify",
-                    "uri": "line://app/1654168555-M0qDQvgg"
+                    "uri": "line://app/1654395306-9D0VyZVl",
+                    "altUri": {
+                        "desktop": "https://liff.line.me/1654395306-9D0VyZVl"
+                    }
                 }
             }
         },
@@ -573,7 +578,10 @@ module.exports = {
                 "action": {
                     "type": "uri",
                     "label": "contact us",
-                    "uri": "https://lin.ee/g5vsfzJ"
+                    "uri": "https://lin.ee/g5vsfzJ",
+                    "altUri": {
+                        "desktop": "https://liff.line.me/1654395306-4W0eJQez"
+                    }
                 }
             }
         },
@@ -678,10 +686,10 @@ module.exports = {
                 "paddingAll": "0px",
                 "action": {
                     "type": "uri",
-                    "label": "coculaters",
-                    "url": "line://app/1654168555-joA0w577",
+                    "label": "calculators",
+                    "url": "line://app/1654395306-MJnBq3Bg",
                     "altUri": {
-                        "desktop": "https://liff.line.me/1654168555-joA0w577"
+                        "desktop": "https://liff.line.me/1654395306-MJnBq3Bg"
                     }
                 }
             }
@@ -751,14 +759,13 @@ module.exports = {
                 "paddingAll": "0px",
                 "action": {
                     "type": "uri",
-                    "label": "open url'",
-                    "uri": "line://app/1654168555-kVyx8BAA",
+                    "label": "visit website'",
+                    "uri": "line://app/1654395306-XZBdoedx",
                     "altUri": {
-                        "desktop": "https://liff.line.me/1654168555-kVyx8BAA"
+                        "desktop": "https://liff.line.me/1654395306-XZBdoedx"
                     }
                 }
             }
         }
-
-    ])
-};
+    ]
+}
