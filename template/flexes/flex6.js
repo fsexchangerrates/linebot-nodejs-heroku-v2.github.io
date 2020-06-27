@@ -1,9 +1,5 @@
-Object.defineProperty(module.exports, 'CommonJS', { value: true });
-
 module.exports = {
-    "type": "flex",
-    "altText": "neteller",
-    "contents": {
+    neteller: {
         "type": "carousel",
         "contents": [{
                 "type": "bubble",
@@ -418,9 +414,9 @@ module.exports = {
                                                 "action": {
                                                     "type": "uri",
                                                     "label": "แจ้งโอนขายเหรียญ",
-                                                    "uri": "line://app/1654168555-vKg3wqZZ",
+                                                    "uri": "line://app/1654395306-v5jawxag",
                                                     "altUri": {
-                                                        "desktop": "https://liff.line.me/1654168555-vKg3wqZZ"
+                                                        "desktop": "https://liff.line.me/1654395306-v5jawxag"
                                                     }
                                                 },
                                                 "offsetTop": "0px",
@@ -898,9 +894,9 @@ module.exports = {
                                                 "action": {
                                                     "type": "uri",
                                                     "label": "แจ้งโอนซื้อเหรียญ",
-                                                    "uri": "line://app/1654168555-O4AV6YRR",
+                                                    "uri": "line://app/1654395306-JDnq6ZqK",
                                                     "altUri": {
-                                                        "desktop": "https://liff.line.me/1654168555-O4AV6YRR"
+                                                        "desktop": "https://liff.line.me/1654395306-JDnq6ZqK"
                                                     }
                                                 },
                                                 "offsetTop": "0px",
