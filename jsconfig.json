@@ -5,18 +5,22 @@
         "module": "commonJS",
         "inlineSources": true,
         "inlineSourceMap": true,
-        "baseUrl": ".",
-        "esModuleInterop": false
+        "esModuleInterop": false,
+        "lib": ["es2017"],
+        "jsx": "preserve",
+        "rootDir": "./index.js"
     },
     "include": [
-        "middleware",
-        "validate",
-        "service",
-        "handler",
-        "dialog",
-        "template"
+        "./middleware",
+        "./validate",
+        "./service",
+        "./handler",
+        "./dialog",
+        "./template",
+        ".env"
     ],
     "exclude": [
         "node_modules"
-    ]
+    ],
+    "typeAcquisition": {"enable": true}
 }
