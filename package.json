@@ -1,0 +1,25 @@
+{
+  "name": "linebot-nodejs-heroku-v2.github.io",
+  "version": "1.0.0",
+  "description": "Line bot with Node-JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "run-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsexchangerrates/linebot-nodejs-heroku-v2.github.io.git"
+  },
+  "keywords": [
+    "linebot",
+    "line",
+    "bot",
+    "chatbot"
+  ],
+  "author": "FS-EXCHANGER",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/fsexchangerrates/linebot-nodejs-heroku-v2.github.io/issues"
+  },
+  "homepage": "https://github.com/fsexchangerrates/linebot-nodejs-heroku-v2.github.io#readme"
+}
