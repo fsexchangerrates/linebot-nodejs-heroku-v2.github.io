@@ -1,6 +1,6 @@
 const { Line } = require('messaging-api-line');
 
-module.exports = (client, event) => {
+function handle(client, event) {
     const { replyToken, postback, source } = event;
 
     const userId = source.userId;
@@ -5912,4 +5912,6 @@ module.exports = (client, event) => {
     } else {
         return console.log(`Got postback data ${data}`);
     }
-};
+}
+
+module.exports = handle;

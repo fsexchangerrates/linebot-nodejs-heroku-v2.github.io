@@ -1,8 +1,8 @@
 const { Line } = require('messaging-api-line');
 const util = require('util');
-const greeting = require('template/flex/greeting');
+const greeting = require('template/flexes/flex1');
 
-module.exports = (client, event) => {
+function handle(client, event) {
     const { replyToken, source } = event;
 
     const userId = source.userId;
@@ -21,4 +21,6 @@ module.exports = (client, event) => {
             Line.createFlex('greeting', greeting)
         ]);
     })
-};
+}
+
+module.exports = handle;
