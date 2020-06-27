@@ -36,6 +36,7 @@
         "express-session": "^1.17.1",
         "messaging-api-line": "^0.8.5",
         "middleware": "^1.0.0",
+        "store2": "^2.11.2",
         "util": "^0.12.3"
     },
     "files": [
