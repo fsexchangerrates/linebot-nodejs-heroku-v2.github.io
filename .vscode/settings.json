@@ -5,6 +5,7 @@
         "titleBar.activeForeground": "#FCFCFF"
     },
     "cSpell.words": [
+        "bodybuffer",
         "linebot"
     ],
     "eslint.enable": false
