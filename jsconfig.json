@@ -1,3 +1,22 @@
 {
-    
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonJS",
+        "inlineSources": true,
+        "inlineSourceMap": true,
+        "baseUrl": ".",
+        "esModuleInterop": false
+    },
+    "include": [
+        "middleware",
+        "validate",
+        "service",
+        "handler",
+        "dialog",
+        "template"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
