@@ -4,7 +4,6 @@
     "description": "Line bot with Node-JS",
     "main": "index.js",
     "scripts": {
-        "build": "run-all",
         "start": "node index.js",
         "test": "run-test"
     },
@@ -23,5 +22,28 @@
     "bugs": {
         "url": "https://github.com/fsexchangerrates/linebot-nodejs-heroku-v2.github.io/issues"
     },
-    "homepage": "https://github.com/fsexchangerrates/linebot-nodejs-heroku-v2.github.io#readme"
+    "homepage": "https://github.com/fsexchangerrates/linebot-nodejs-heroku-v2.github.io#readme",
+    "dependencies": {
+        "@line/bot-sdk": "^7.0.0",
+        "@types/node": "^14.0.14",
+        "axios": "^0.19.2",
+        "axios-error": "^0.7.18",
+        "body-parser": "^1.19.0",
+        "crypto": "^1.0.1",
+        "dotenv": "^8.2.0",
+        "eslint": "^7.3.1",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "messaging-api-line": "^0.8.5",
+        "middleware": "^1.0.0",
+        "util": "^0.12.3"
+    },
+    "files": [
+        "middleware",
+        "validate",
+        "handler",
+        "service",
+        "dialog",
+        "template"
+    ]
 }
