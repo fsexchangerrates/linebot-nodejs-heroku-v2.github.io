@@ -4,7 +4,7 @@ const verifyMiddleware = require('./middleware/verify');
 const postbackHandler = require('./handler/postback');
 const followHandler = require('./handler/follow');
 const messageHandler = require('./handler/message');
-const flexMessage = require('./template/flexes/flex1');
+const flex1 = require('./template/flexes/flex1');
 
 const client = LineClient.connect(
     process.env.ACCESS_TOKEN,
@@ -39,7 +39,7 @@ const handleEvent = event => {
     if (verifyEvents.includes(replyToken)) return Promise.resolve(null);
     return client.reply(replyToken, [
         Line.createText("start"),
-        Line.createFlex('greeting', flexMessage.greeting)
+        Line.createFlex('greeting', flex1.greeting)
     ]);
 };
 

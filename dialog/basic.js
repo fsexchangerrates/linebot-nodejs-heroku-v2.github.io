@@ -6,6 +6,12 @@ module.exports = {
     },
 
     mainFlow(client, userId, replyToken, message) {
+        session.set(userId);
+    },
 
-    }
+    getReplyToken(replyToken) {
+        return session.get(replyToken);
+    },
+
+
 };
