@@ -1,8 +1,5 @@
 const { Line } = require('messaging-api-line');
 
-const richMenuId1 = "hhhhhhhhhhhhhhhhhhhhhhhhhhh";
-const richMenuId2 = "gggggggggggggggggggggg";
-
 module.exports = (client, event) => {
     const { replyToken, postback, source } = event;
 
