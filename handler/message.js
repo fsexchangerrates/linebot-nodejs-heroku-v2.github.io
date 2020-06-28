@@ -1,4 +1,5 @@
 const { Line } = require('messaging-api-line');
+const flow = require('../dialog/basic');
 
 /*
 {
@@ -23,8 +24,24 @@ const { Line } = require('messaging-api-line');
   }
 */
 
-function handleMessage(client, event) {
+const messageHandler = (client, event) => {
+    const { replyToken, message, source } = event;
 
-}
+    const userId = source.userId;
+    console.log("userId", userId);
 
-module.exports = handleMessage;
+    const messageType = message.type;
+    const messageText = message.text;
+
+    if (messageType === 'text') {
+        return flow.mainFlow(client, userId, replyToken, messageText);
+    } else {
+        return client.reply(replyToken, [
+            Line.createCarouselTemplate('image carousel template', '3', [
+                Line.createImage('https://')
+            ])
+        ]);
+    }
+};
+
+module.exports = messageHandler;

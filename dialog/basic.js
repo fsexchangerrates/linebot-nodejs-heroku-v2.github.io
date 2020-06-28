@@ -14,6 +14,10 @@ module.exports = {
         return session.get(userId);
     },
 
+    action(action) {
+        const buy = session.set(action, 'buy', true)
+    },
+
     mainFlow(client, userId, replyToken, message) {
         const current = session.get(userId);
 
@@ -29,7 +33,7 @@ module.exports = {
                 session.set(userId, { action: { matches: /^('buy'|'sell')/i } }, true);
                 return client.reply(replyToken, [Line.createFlex('paypal', flex3.paypal)]);
             case "webmoney":
-                session.set(userId, { action: { matches: /^('buy'|'sell')/i } }, true);
+                session.set(userId, { action: { matches: /^(open?url=)/i } }, true);
                 client.reply(replyToken, [Line.createFlex('webmoney', flex4.webmoney)]);
         }
     },

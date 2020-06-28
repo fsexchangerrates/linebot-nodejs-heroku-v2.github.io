@@ -41,7 +41,7 @@ const handleEvent = event => {
     if (verifyEvents.includes(replyToken)) return Promise.resolve(null);
     return client.reply(replyToken, [
         Line.createText("start"),
-        Line.createFlex('greeting', flex1.greeting)
+        Line.createFlex('greeting', FLEX_GREETING_MESSAGE)
     ]);
 };
 
