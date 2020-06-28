@@ -1,17 +1,15 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
+        "allowJs": true,
+        "target": "ES2017",
+        "module": "CommonJS",
         "baseUrl": ".",
-        "target": "es2017",
-        "module": "commonJS",
         "paths": {
             "*": [
                 "/node_modules"
-            ] 
+            ]
         },
         "rootDir": "./index.js"
-    },
-    "exclude": [
-        "./node_modules"
-    ]
+    }
 }
