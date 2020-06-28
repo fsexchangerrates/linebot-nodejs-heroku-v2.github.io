@@ -19,7 +19,7 @@ module.exports = {
 
         switch (current) {
             case null:
-                session.set(userId, "currency", true);
+                session.set(userId, "start", true);
                 return client.replyFlex(replyToken, [Line.createFlex('greeting', flex1.greeting)]);
             case "currency":
                 session.set(userId, "paypal" || "webmoney" || "perfectmoney" || "neteller" || "skrill", true);
@@ -34,7 +34,9 @@ module.exports = {
         }
     },
 
-    getActionTrigger(action) {
-        session.get()
+    getActionTrigger(client, event) {
+        const { message, source } = event;
+        const { userId } = source;
+
     }
 };

@@ -1,10 +1,7 @@
-function makeText(text) {
-    return {
-        type: 'text',
-        text: text
-    };;
-}
+const session = require('store2');
+const dialog = require('../dialog/basic');
+const util = require('util');
 
 module.exports = {
-    greeting: makeText('greeting')
+
 };

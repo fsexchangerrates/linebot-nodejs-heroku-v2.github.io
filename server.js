@@ -13,6 +13,8 @@ const client = LineClient.connect(
 
 const server = express();
 
+const FLEX_GREETING_MESSAGE = flex1.greeting;
+
 const config = {
     channelSecret: process.env.CHANNEL_SECRET
 };

@@ -1,6 +1,25 @@
 const { Line } = require('messaging-api-line');
 
-function handle(client, event) {
+/*
+{
+"events": [{
+    "type": "postback",
+    "replyToken": "29b781f19fe84849821d3f09b5bfc3af",
+    "source": {
+        "userId": "Ucd21733a3fc45798492dddd289fdf174",
+        "type": "user"
+    },
+    "timestamp": 1590648229452,
+    "mode": "active",
+    "postback": {
+        "data": "nextmenu"
+    }
+}],
+"destination": "U627409f8ca632dca407a2e5bad1f4f0b"
+}
+*/
+
+const postbackHandler = (client, event) => {
     const { replyToken, postback, source } = event;
 
     const userId = source.userId;
@@ -5912,6 +5931,6 @@ function handle(client, event) {
     } else {
         return console.log(`Got postback data ${data}`);
     }
-}
+};
 
-module.exports = handle;
+module.exports = postbackHandler;
