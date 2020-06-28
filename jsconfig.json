@@ -1,0 +1,13 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "es2017",
+        "module": "commonJS",
+        "paths": {
+            "dotenv": [
+                ".env"
+            ] 
+        }
+    }
+}
