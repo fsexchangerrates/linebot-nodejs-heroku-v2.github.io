@@ -32,7 +32,7 @@
         "crypto": "^1.0.1",
         "dotenv": "^8.2.0",
         "eslint": "^7.3.1",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "express-session": "^1.17.1",
         "messaging-api-line": "^0.8.5",
         "middleware": "^1.0.0",
